@@ -1,6 +1,7 @@
 import express from 'express';
 
 const app = express();
+const PORT = 3000;
 
 // Set static folder
 app.use(express.static('public'));
@@ -12,6 +13,6 @@ app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
 // Start the server
-listen(3000, () => {
-console.log('Server listening successfully on port 3000')
+app.listen(3000, () => {
+console.log('Server listening successfully on port ' + PORT)
 });
