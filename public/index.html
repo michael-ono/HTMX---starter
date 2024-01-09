@@ -8,6 +8,17 @@
     <title>HTMX - starter</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <div class="text-center">
+        <h1 class="text-2xl font-bold my-5">
+            Simple request example
+        </h1>
+        <button 
+            class="bg-blue-500 text-white py-2 px-3 my-5 rounded-lg"
+            hx-get="https://jsonplaceholder.typicode.com/users" 
+            hx-trigger="click"
+        >
+            Fetch Users
+        </button>
+    </div>
 </body>
 </html>
