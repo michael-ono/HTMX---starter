@@ -14,5 +14,5 @@ app.use(express.json());
 
 // Start the server
 app.listen(3000, () => {
-console.log('Server listening successfully on port ' + PORT)
+console.log(`Server listening successfully on port ${PORT}`)
 });
