@@ -10,6 +10,9 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true}));
 
 // Handle GET request to fetch users
+app.get('/users'), (req, res) => {
+    const users = []
+};
 
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json());
