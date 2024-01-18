@@ -15,7 +15,11 @@ app.get('/users'), (req, res) => {
         {id: 1, name: 'John Doe'},
         {id: 2, name: 'Katt Willams'},
         {id: 3, name: 'Mike Hunter'},
-    ]
+    ];
+
+    res.send(`
+        <h1 class="text-2xl font-bold my-4">Users</h1>
+    `)
 };
 
 // Parse JSON bodies (as sent by API clients)
