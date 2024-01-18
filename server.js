@@ -11,7 +11,11 @@ app.use(express.urlencoded({ extended: true}));
 
 // Handle GET request to fetch users
 app.get('/users'), (req, res) => {
-    const users = []
+    const users = [
+        {id: 1, name: 'John Doe'},
+        {id: 2, name: 'Katt Willams'},
+        {id: 3, name: 'Mike Hunter'},
+    ]
 };
 
 // Parse JSON bodies (as sent by API clients)
